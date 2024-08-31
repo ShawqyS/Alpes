@@ -24,33 +24,33 @@
           "children": [
             {
               "name": "Malla Diamante",
-              "url": "/"
+              "url": "/products/diamond"
             },
             {
               "name": "Malla Lisa",
-              "url": "/"
+              "url": "/about"
             },
             {
               "name": "Malla Estilo Virginia",
-              "url": "/"
+              "url": "/about"
             },
             {
               "name": "Malla Espiral",
-              "url": "/"
+              "url": "/about"
             },
             {
               "name": "Malla Cuadriculada",
-              "url": "/"
+              "url": "/about"
             },
             {
               "name": "Malla De Terminado Stockinette",
-              "url": "/"
+              "url": "/about"
             }
           ]
         },
         {
           "name": "Casing-Net™",
-          "url": "/"
+          "url": "/about"
         },
         {
           "name": "Kote™",
@@ -59,25 +59,25 @@
           "children": [
             {
               "name": "Ultra-Kote™",
-              "url": "/"
+              "url": "/about"
             },
             {
               "name": "Flavor-Kote™",
-              "url": "/"
+              "url": "/about"
             },
             {
               "name": "Spice-Kote™",
-              "url": "/"
+              "url": "/about"
             }
           ]
         },
         {
           "name": "Stockinette",
-          "url": "/"
+          "url": "/about"
         },
         {
           "name": "Red Elastica",
-          "url": "/"
+          "url": "/about"
         }
       ]
     }

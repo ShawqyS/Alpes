@@ -60,7 +60,7 @@ const Home = ({ params }: { params: { lang: string } }) => {
       title: title1,
       description:
         description1,
-      link: "https://alpescasing.com/about",
+      link: "https://alpescasing.com/products/diamond",
     },
     {
       title: title2,
