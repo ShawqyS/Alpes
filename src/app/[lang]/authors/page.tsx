@@ -1,5 +1,6 @@
 import AuthorCard from "@/components/AuthorCard";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { getActiveLanguages, getLanguageObj } from "@/lib/languageParser";
 import PageHeader from "@/partials/PageHeader";
@@ -15,7 +16,47 @@ const Authors = ({ params }: { params: { lang: string } }) => {
   const authors: Author[] = getSinglePage(
     path.join(language.contentDir, "authors"),
   );
-  const { title, meta_title, description, image } = authorIndex.frontmatter;
+  const { title, meta_title, description, image, title1, title2, title3, title4, title5, title6, description1, description2, description3, description4, description5, description6 } = authorIndex.frontmatter;
+
+  const projects = [
+    {
+      title: title1,
+      description:
+        description1,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title2,
+      description:
+      description2,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title3,
+      description:
+      description3,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title4,
+      description:
+      description4,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title5,
+      description:
+      description5,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title6,
+      description:
+      description6,
+      link: "https://alpescasing.com/about",
+    },
+  ];
+  
   return (
     <>
       <SeoMeta
@@ -25,19 +66,10 @@ const Authors = ({ params }: { params: { lang: string } }) => {
         image={image}
       />
       <PageHeader title={title}>
-        <Breadcrumbs lang={params.lang} />
       </PageHeader>
-      <section className="section-sm pb-0">
-        <div className="container">
-          <div className="row justify-center">
-            {authors.map((author: Author, index: number) => (
-              <div className="mb-14 md:col-6 lg:col-4" key={index}>
-                <AuthorCard data={author} lang={params.lang} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <div className="max-w-full mx-auto px-8">
+        <HoverEffect items={projects} />
+      </div>
     </>
   );
 };

@@ -6,10 +6,16 @@ import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction";
 import SeoMeta from "@/partials/SeoMeta";
 import Testimonials from "@/partials/Testimonials";
-import { Button, Feature } from "@/types";
+import { Author, Button, Feature } from "@/types";
 import Link from "next/link";
 import path from "path";
 import { FaCheck } from "react-icons/fa";
+import React from "react";
+import Image from "next/image";
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
+import { ImagesSlider } from "@/components/ui/images-slider";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+
 
 // remove dynamicParams
 export const dynamicParams = false;
@@ -29,12 +35,17 @@ const Home = ({ params }: { params: { lang: string } }) => {
   const homepage = getListPage(
     path.join(language?.contentDir, "homepage/_index.md"),
   );
+
+  const authorIndex: Author = getListPage(
+    path.join(language.contentDir, "authors/_index.md"),
+  );
   const testimonial = getListPage(
     path.join(language.contentDir, "sections/testimonial.md"),
   );
   const callToAction = getListPage(
     path.join(language.contentDir, "sections/call-to-action.md"),
   );
+  const { title1, title2, title3, title4, title5, title6, description1, description2, description3, description4, description5, description6, discover } = authorIndex.frontmatter;
   const { frontmatter } = homepage;
   const {
     banner,
@@ -44,37 +55,92 @@ const Home = ({ params }: { params: { lang: string } }) => {
     features: Feature[];
   } = frontmatter;
 
+  const projects = [
+    {
+      title: title1,
+      description:
+        description1,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title2,
+      description:
+      description2,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title3,
+      description:
+      description3,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title4,
+      description:
+      description4,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title5,
+      description:
+      description5,
+      link: "https://alpescasing.com/about",
+    },
+    {
+      title: title6,
+      description:
+      description6,
+      link: "https://alpescasing.com/about",
+    },
+  ];
+
+  const words = [
+    {
+      text: "Alpes",
+      className: "text-sky-300 dark:text-sky-300",
+    },
+    {
+      text: "Alimentos",
+      className: "text-white",
+    },
+    {
+      text: "y",
+      className: "text-white",
+    },
+    {
+      text: "Productos",
+      className: "text-white",
+    },
+    {
+      text: "Especiales,",
+      className: "text-white",
+    },
+    {
+      text: "S.A.",
+      className: "text-white",
+    },
+    {
+      text: "de",
+      className: "text-white",
+    },
+    {
+      text: "C.V.",
+      className: "text-white",
+    },
+  ];
+
+  const images = [
+    "https://jifpak.kallegroup.com/fileadmin/_processed_/a/d/csm_kalle-jifpak-stage-ultra-kote_be630402be.jpg",
+    "https://jifpak.kallegroup.com/fileadmin/_processed_/e/c/csm_kalle-jifpak-stage-spice-kote_3aaed585d6.jpg",
+    "https://jifpak.kallegroup.com/fileadmin/_processed_/1/a/csm_kalle-jif-pak-stage-schinken_606e49df1d.jpg",
+  ];
+
   return (
     <>
       <SeoMeta />
-      <section className="section pt-14">
-        <div className="container">
-          <div className="row justify-center">
-            <div className="lg:col-7 md:col-9 mb-8 text-center">
-              <h1
-                className="mb-4 text-h3 lg:text-h1"
-                dangerouslySetInnerHTML={markdownify(banner.title)}
-              />
-              <p
-                className="mb-8"
-                dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
-              />
-            </div>
-            {banner.image && (
-              <div className="col-12">
-                <ImageFallback
-                  src={banner.image}
-                  className="mx-auto"
-                  width="800"
-                  height="420"
-                  alt="banner image"
-                  priority
-                />
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
+      <ImagesSlider className="h-[40rem]" images={images}>
+        <TypewriterEffect className="z-50" words={words} />
+      </ImagesSlider>
 
       {features.map((feature, index: number) => (
         <section
@@ -121,6 +187,12 @@ const Home = ({ params }: { params: { lang: string } }) => {
           </div>
         </section>
       ))}
+      <div>
+        <h1 className="text-center" dangerouslySetInnerHTML={markdownify(discover)}></h1>
+        <div className="max-w-full mx-auto px-8">
+          <HoverEffect items={projects} />
+        </div>
+      </div>
     </>
   );
 };

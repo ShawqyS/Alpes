@@ -30,6 +30,19 @@ export type Post = {
 export type Author = {
   frontmatter: {
     title: string;
+    title1: string;
+    title2: string;
+    title3: string;
+    title4: string;
+    title5: string;
+    title6: string;
+    discover: string;
+    description1: string;
+    description2: string;
+    description3: string;
+    description4: string;
+    description5: string;
+    description6: string;
     image?: string;
     description?: string;
     meta_title?: string;

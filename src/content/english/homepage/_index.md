@@ -5,7 +5,7 @@ banner:
   content: "The best in Elastic Nettings, Smoked Casings and Spiced Casings"
   image: "/images/banner.jpg"
   button:
-    enable: true
+    enable: false
     label: "Get Started For Free"
     link: "https://github.com/zeon-studio/nextplate"
 
@@ -20,18 +20,6 @@ features:
       enable: false
       label: "Go To Our Products"
       link: "#"
-
-  - title: "Discover Our Products"
-    image: "/images/service-2.jpg"
-    content: "Our nets and casings have a great variety of diameters, circumferences, designs, flavors, smoke and spices to improve the final presentation of your products."
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-    button:
-      enable: true
-      label: "Go To Our Products"
-      link: "https://github.com/zeon-studio/nextplate"
 
   - title: "Our Services"
     image: "/images/logo.png"

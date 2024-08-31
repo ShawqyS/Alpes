@@ -21,18 +21,6 @@ features:
       label: "Go To Our Products"
       link: "#"
 
-  - title: "Descubre Nuestros Productos"
-    image: "/images/service-2.jpg"
-    content: "Nuestras redes y envolturas tienen una gran variedad de diámetros, circunferencias, diseños, sabores, humo y especias para mejorar la presentación final de tus productos."
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-    button:
-      enable: true
-      label: "Ir a Nuestros Productos"
-      link: "https://github.com/zeon-studio/nextplate"
-
   - title: "Nuestros Servicios"
     image: "/images/logo.png"
     content: "Somos asesores, consultores y capacitadores para el desarrollo de nuevos productos en la industria cárnica."

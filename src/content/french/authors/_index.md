@@ -1,3 +1,16 @@
 ---
-title: "Authors"
+title: "Productos"
+title1: "Malla Diamante"
+title2: "Malla Estilo Virginia"
+title3: "Malla Espiral"
+title4: "Malla Rib"
+title5: "Malla Cuadriculada"
+title6: "Malla Lisa"
+description1: ""
+description2: ""
+description3: ""
+description4: ""
+description5: ""
+description6: ""
+discover: "Descubre algunos de nuestros productos"
 ---

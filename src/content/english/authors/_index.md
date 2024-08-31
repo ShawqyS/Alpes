@@ -1,3 +1,16 @@
 ---
-title: "Authors"
+title: "Products"
+title1: "Diamond Pattern"
+title2: "Ripple Pattern"
+title3: "Spiral Pattern"
+title4: "Rib Pattern"
+title5: "Square Pattern"
+title6: "Smooth Pattern"
+description1: ""
+description2: ""
+description3: ""
+description4: ""
+description5: ""
+description6: ""
+discover: "Discover some of our Products"
 ---
