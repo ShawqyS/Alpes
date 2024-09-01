@@ -41,4 +41,4 @@ La producción de pechuga de pavo ahumada o asada se puede realizar en un solo p
 
 Un atractivo color dorado es el resultado de este proceso, la reducción de los tiempos de cocción, el ahorro en mano de obra y la mejora en el rendimiento son el resultado de la eliminación del ahumado en un solo proceso de cocción.
 
-## Ideal para productos de aves de corral, jamón y jamón glaseado con miel.
+> Ideal para productos de aves de corral, jamón y jamón glaseado con miel.
