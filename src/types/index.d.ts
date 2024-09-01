@@ -11,6 +11,22 @@ export type RegularPage = {
   slug?: string;
 };
 
+export type AboutPage = {
+  frontmatter: {
+    title: string;
+    image?: string;
+    description?: string;
+    meta_title?: string;
+    layout?: string;
+    draft?: boolean;
+    about: string;
+    mission: string;
+    abouttext: string;
+    missiontext: string;
+  };
+  content: string;
+};
+
 export type Post = {
   frontmatter: {
     title: string;

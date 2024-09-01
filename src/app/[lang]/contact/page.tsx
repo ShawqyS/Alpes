@@ -30,7 +30,6 @@ const Contact = async ({ params }: { params: { lang: string } }) => {
         image={image}
       />
       <PageHeader title={title}>
-        <Breadcrumbs lang={params.lang} />
       </PageHeader>
       <section className="section-sm">
         <div className="container">

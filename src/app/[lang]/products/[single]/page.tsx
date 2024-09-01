@@ -1,6 +1,7 @@
 import BlogCard from "@/components/BlogCard";
 import Disqus from "@/components/Disqus";
 import Share from "@/components/Share";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { LampContainer } from "@/components/ui/lamp";
 import config from "@/config/config.json";
 import ImageFallback from "@/helpers/ImageFallback";
@@ -21,6 +22,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import path from "path";
 import { FaRegClock, FaRegFolder, FaRegUserCircle } from "react-icons/fa";
+import Image from "next/image";
 
 const { blog_folder } = config.settings;
 

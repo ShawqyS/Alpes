@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Alpes Casing",
-    "base_url": "https://nextplate.netlify.app",
+    "base_url": "https://alpescasing.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/logo.png",
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo.png",
     "logo_width": "150",
     "logo_height": "27",
-    "logo_text": "Nextplate"
+    "logo_text": "Alpes"
   },
 
   "settings": {
@@ -26,14 +26,14 @@
   },
 
   "params": {
-    "contact_form_action": "#",
+    "contact_form_action": "https://formspree.io/f/meojnykq",
     "copyright": "Designed And Developed by Shawqy Schenkels"
   },
 
   "navigation_button": {
     "enable": true,
     "label": "Get Started",
-    "link": "https://github.com/zeon-studio/nextplate"
+    "link": ""
   },
 
   "disqus": {
