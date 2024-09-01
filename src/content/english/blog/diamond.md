@@ -1,7 +1,7 @@
 ---
 title: "Diamond Pattern"
-meta_title: ""
-description: "this is meta description"
+meta_title: "Diamond Pattern Casings"
+description: "Here you will be able to find more info about Alpes Casings Diamond pattern casing"
 date: 2022-04-04T05:00:00Z
 image: "/images/diamond.png"
 categories: ["Application", "Data"]

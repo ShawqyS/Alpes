@@ -1,7 +1,7 @@
 ---
-title: "Coming Soon..."
-meta_title: "About"
-description: "this is meta description"
+title: "Nuestra Servicios"
+meta_title: "Nuestra Servicios"
+description: "Aquí puedes encontrar más información sobre Alpes Casings."
 image: "/images/avatar.png"
 draft: false
 mission: "Nuestra Mission"

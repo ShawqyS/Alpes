@@ -1,7 +1,7 @@
 ---
 title: "Malla Diamante"
-meta_title: ""
-description: "this is meta description"
+meta_title: "Malla Diamante"
+description: "Aquí podrás encontrar más información sobre la tripa con malla de diamante de Alpes Casings."
 date: 2022-04-04T05:00:00Z
 image: "/images/diamond.png"
 categories: ["Application", "Data"]
