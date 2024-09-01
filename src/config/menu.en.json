@@ -5,11 +5,11 @@
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "Nuestro Servicios",
       "url": "/about"
     },
     {
-      "name": "Contact",
+      "name": "Contacto",
       "url": "/contact"
     },
     {
@@ -84,7 +84,7 @@
   ],
   "footer": [
     {
-      "name": "Contact",
+      "name": "Contacto",
       "url": "/contact"
     },
     {
