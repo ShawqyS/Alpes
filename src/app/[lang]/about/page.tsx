@@ -16,7 +16,7 @@ const About = ({ params }: { params: { lang: string } }) => {
     path.join(language.contentDir, "about/_index.md"),
   );
   const { frontmatter, content } = data;
-  const { title, meta_title, description, image, about, mission, abouttext, missiontext } = frontmatter;
+  const { title, meta_title, description, image, about, mission, abouttext, missiontext, vision, visiontext } = frontmatter;
 
   const contents = [
     {
@@ -43,6 +43,22 @@ const About = ({ params }: { params: { lang: string } }) => {
         <div className="h-full w-full  flex items-center justify-center text-black dark:text-white">
           <Image
             src="/images/s2.png"
+            width={300}
+            height={300}
+            className="h-full w-full object-cover"
+            alt="linear board demo"
+          />
+        </div>
+      ),
+    },
+    {
+      title: vision,
+      description:
+        visiontext,
+      content: (
+        <div className="h-full w-full  flex items-center justify-center text-black dark:text-white">
+          <Image
+            src="/images/s3.png"
             width={300}
             height={300}
             className="h-full w-full object-cover"

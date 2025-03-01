@@ -21,15 +21,15 @@ const similarItems = (
 
   // filter by categories
   const filterByCategories = allItems.filter((item: any) =>
-    categories.find((category) =>
-      item.frontmatter.categories.includes(category),
-    ),
+    categories.some((category) =>
+      item.frontmatter.categories?.includes(category)
+    )
   );
-
-  // filter by tags
+  
   const filterByTags = allItems.filter((item: any) =>
-    tags.find((tag) => item.frontmatter.tags.includes(tag)),
+    tags.some((tag) => item.frontmatter.tags?.includes(tag))
   );
+  
 
   // merged after filter
   const mergedItems = [...new Set([...filterByCategories, ...filterByTags])];

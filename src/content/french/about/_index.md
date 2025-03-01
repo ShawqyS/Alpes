@@ -4,10 +4,12 @@ meta_title: "Nuestra Servicios"
 description: "Aquí puedes encontrar más información sobre Alpes Casings."
 image: "/images/avatar.png"
 draft: false
-mission: "Nuestra Mission"
-about: "A Cerca de Nosotros"
-missiontext: "Trabajamos en las diferentes industrias de embutidos cárnicos, así como la de carnes frescas y de quesos para que los productos terminados, superen las expectativas visuales de sabor y calidad de los consumidores."
-abouttext: "Con más de 25 años en el mercado, somos una empresa líder en la venta de mallas ahumadas, mallas condimentadas, mallas saborizadas y redes elásticas para la producción de embutidos, jamones y quesos."
+mission: "Misión"
+vision: "Visión"
+about: "Sobre Nosotros"
+missiontext: "Potencializar las ventas de nuestros clientes mediante el uso de nuestros productos y servicios."
+abouttext: "Con más de 30 años de experiencia en el mercado, somos una empresa líder en la venta de fundas, redes y mallas para la producción de embutidos, jamones y quesos. Ofrecemos servicios de asesoría, capacitación y formulación para el desarrollo de nuevos productos."
+visiontext: "Incrementar el liderazgo en el mercado multinacional, siendo sinónimo de calidad, compromiso, calidad humana, y lo mejor para tus embutidos."
 
 ---
 

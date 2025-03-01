@@ -8,7 +8,7 @@ import { slugSelector } from "@/lib/utils/slugSelector";
 import { markdownify } from "@/lib/utils/textConverter";
 import { INavigationLink } from "@/types";
 import Link from "next/link";
-import { FaPhone, FaEnvelope } from "react-icons/fa"; // Import icons
+import { FaPhone, FaEnvelope, FaFilePdf } from "react-icons/fa"; // Import icons
 
 const Footer = ({
   lang,
@@ -32,9 +32,20 @@ const Footer = ({
                 <FaPhone className="mr-2" />
                 <span>+(55) 5766-0412</span>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center mr-4">
                 <FaEnvelope className="mr-2" />
                 <span>servicios@alpescasing.com</span> {/* Replace with your email */}
+              </div>
+              <div className="flex items-center mr-4">
+                <a
+                  href="/files/Aviso-de-Privacidad-Alpes.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center" // Add this class for proper alignment
+                >
+                  <FaFilePdf className="mr-2" />
+                  <span>Aviso de Privacidad</span>
+                </a>
               </div>
             </div>
           </div>

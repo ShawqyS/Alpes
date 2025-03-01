@@ -43,4 +43,11 @@ Un atractivo color dorado es el resultado de este proceso, la reducción de los 
 
 > Ideal para productos de aves de corral, jamón y jamón glaseado con miel.
 
+## Opciones:
+- Mini diamante
+- Diamante ancho
+- Diamante verdadero
+- Diamante grande
+
+
 # Tamaño de Embutido Recomendado Antes del Procesamiento

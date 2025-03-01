@@ -43,4 +43,10 @@ An attractive golden color is the result of this process, the reduction of cooki
 
 > Ideal for poultry products, ham and honey glazed ham.
 
+## Options:
+- Mini Diamond
+- Wide Diamond
+- True Diamond
+- Large Diamond
+
 # Recommended Stuffing Size Before Processing

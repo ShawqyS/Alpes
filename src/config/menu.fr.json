@@ -13,71 +13,79 @@
       "url": "/contact"
     },
     {
-      "name": "Productos",
+      "name": "About Our Products",
+      "url": "/products/about"
+    },
+    {
+      "name": "Products",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Mallas",
+          "name": "Traditional Meshes",
           "url": "",
           "hasChildren": true,
           "children": [
             {
-              "name": "Malla Diamante",
+              "name": "Squared (SQR)",
+              "url": "/products/cuadriculado"
+            },
+            {
+              "name": "Diamond (DIA)",
               "url": "/products/diamond"
             },
             {
-              "name": "Malla Lisa",
-              "url": "/about"
+              "name": "Smooth (SMR)",
+              "url": "/products/liso"
             },
             {
-              "name": "Malla Estilo Virginia",
-              "url": "/about"
+              "name": "Ribbed (RIB)",
+              "url": "/products/acanalado"
             },
             {
-              "name": "Malla Espiral",
-              "url": "/about"
+              "name": "Woven (RPL)",
+              "url": "/products/ondulado"
             },
             {
-              "name": "Malla Cuadriculada",
-              "url": "/about"
+              "name": "Spiral (SPL)",
+              "url": "/products/espiral"
             },
             {
-              "name": "Malla De Terminado Stockinette",
-              "url": "/about"
+              "name": "Fixed Circumference (FCH)",
+              "url": "/products/circunferencia_fija"
+            },
+            {
+              "name": "Bone-in Ham (FCR)",
+              "url": "/products/jamon_hueso"
             }
           ]
         },
         {
-          "name": "Casing-Net™",
-          "url": "/about"
-        },
-        {
-          "name": "Kote™",
-          "url": "",
+          "name": "Specialty Meshes",
+          "url": "/products/especialidad",
           "hasChildren": true,
           "children": [
             {
-              "name": "Ultra-Kote™",
-              "url": "/about"
+              "name": "Salted",
+              "url": "/products/saborizada"
             },
             {
-              "name": "Flavor-Kote™",
-              "url": "/about"
-            },
-            {
-              "name": "Spice-Kote™",
-              "url": "/about"
+              "name": "Recovered Mesh",
+              "url": "/products/especialidad"
             }
           ]
         },
         {
           "name": "Stockinette",
-          "url": "/about"
+          "url": "/products/stockinette"
         },
         {
-          "name": "Red Elastica",
-          "url": "/about"
+          "name": "Elastic Nets",
+          "url": "/products/redes_elasticas"
+        },
+        {
+          "name": "Liquid Treatments & De-Moldants",
+          "url": "/products/tratamientos"
         }
       ]
     }

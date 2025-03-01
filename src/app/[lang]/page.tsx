@@ -66,31 +66,31 @@ const Home = ({ params }: { params: { lang: string } }) => {
       title: title2,
       description:
       description2,
-      link: "https://alpescasing.com/about",
+      link: "https://alpescasing.com/products/ondulado",
     },
     {
       title: title3,
       description:
       description3,
-      link: "https://alpescasing.com/about",
+      link: "https://alpescasing.com/products/espiral",
     },
     {
       title: title4,
       description:
       description4,
-      link: "https://alpescasing.com/about",
+      link: "https://alpescasing.com/products/acanalado",
     },
     {
       title: title5,
       description:
       description5,
-      link: "https://alpescasing.com/about",
+      link: "https://alpescasing.com/products/cuadriculado",
     },
     {
       title: title6,
       description:
       description6,
-      link: "https://alpescasing.com/about",
+      link: "https://alpescasing.com/products/liso",
     },
   ];
 

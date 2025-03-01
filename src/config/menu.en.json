@@ -13,82 +13,92 @@
       "url": "/contact"
     },
     {
+      "name": "Sobre Nuestros Productos",
+      "url": "/products/about"
+    },
+    {
       "name": "Productos",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Mallas",
+          "name": "Mallas Tradicionales",
           "url": "",
           "hasChildren": true,
           "children": [
             {
-              "name": "Malla Diamante",
+              "name": "Cuadriculado (SQR)",
+              "url": "/products/cuadriculado"
+            },
+            {
+              "name": "Diamante (DIA)",
               "url": "/products/diamond"
             },
             {
-              "name": "Malla Lisa",
-              "url": "/about"
+              "name": "Liso (SMR)",
+              "url": "/products/liso"
             },
             {
-              "name": "Malla Estilo Virginia",
-              "url": "/about"
+              "name": "Acanalado (RIB)",
+              "url": "/products/acanalado"
             },
             {
-              "name": "Malla Espiral",
-              "url": "/about"
+              "name": "Ondulado (RPL)",
+              "url": "/products/ondulado"
             },
             {
-              "name": "Malla Cuadriculada",
-              "url": "/about"
+              "name": "Espiral (SPL)",
+              "url": "/products/espiral"
             },
             {
-              "name": "Malla De Terminado Stockinette",
-              "url": "/about"
+              "name": "Circunferencia Fija (FCH)",
+              "url": "/products/circunferencia_fija"
+            },
+            {
+              "name": "Jamón con Hueso (FCR)",
+              "url": "/products/jamon_hueso"
             }
+
           ]
         },
         {
-          "name": "Casing-Net™",
-          "url": "/about"
-        },
-        {
-          "name": "Kote™",
+          "name": "Mallas Especiales",
           "url": "",
           "hasChildren": true,
           "children": [
             {
-              "name": "Ultra-Kote™",
-              "url": "/about"
+              "name": "Saborizada",
+              "url": "/products/saborizada"
             },
             {
-              "name": "Flavor-Kote™",
-              "url": "/about"
-            },
-            {
-              "name": "Spice-Kote™",
-              "url": "/about"
+              "name": "Recubierta",
+              "url": "/products/especialidad"
             }
           ]
         },
         {
           "name": "Stockinette",
-          "url": "/about"
+          "url": "/products/stockinette"
         },
         {
-          "name": "Red Elastica",
-          "url": "/about"
+          "name": "Redes Elásticas",
+          "url": "/products/redes_elasticas"
+        },
+        {
+          "name": "Tratamientos",
+          "url": "/products/tratamientos"
         }
       ]
     }
   ],
   "footer": [
     {
-      "name": "Contacto",
+      "name": "Contact",
       "url": "/contact"
     },
     {
-      "name": "Tel: "
+      "name": "Privacy Policy",
+      "url": "/about"
     }
   ]
 }

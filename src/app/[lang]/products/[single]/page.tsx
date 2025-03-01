@@ -167,33 +167,33 @@ const PostSingle = async ({
               <div className="content mb-10">
                 <MDXContent content={content} />
               </div>
-              <Paper sx={{ width: '100%' }}>
-                <TableContainer sx={{ maxHeight: 440 }}>
-                  <Table stickyHeader aria-label="sticky table">
-                    <TableHead>
-                      <TableRow>
-                        <TableCell align="center" colSpan={2}>
-                          Diameter
-                        </TableCell>
-                        <TableCell align="center" colSpan={3}>
-                          Circumference
-                        </TableCell>
-                      </TableRow>
-                      <TableRow>
-                        {columns.map((column) => (
-                          <TableCell
-                            key={column.id}
-                            align={column.align}
-                            style={{ top: 57, minWidth: column.minWidth }}
-                          >
-                            {column.label}
+              {params.single !== "about" && params.single !== "tratamientos" && (
+                <Paper sx={{ width: '100%' }}>
+                  <TableContainer sx={{ maxHeight: 440 }}>
+                    <Table stickyHeader aria-label="sticky table">
+                      <TableHead>
+                        <TableRow>
+                          <TableCell align="center" colSpan={2}>
+                            Diameter
                           </TableCell>
-                        ))}
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {rows
-                        .map((row) => {
+                          <TableCell align="center" colSpan={3}>
+                            Circumference
+                          </TableCell>
+                        </TableRow>
+                        <TableRow>
+                          {columns.map((column) => (
+                            <TableCell
+                              key={column.id}
+                              align={column.align}
+                              style={{ top: 57, minWidth: column.minWidth }}
+                            >
+                              {column.label}
+                            </TableCell>
+                          ))}
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rows.map((row) => {
                           return (
                             <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
                               {columns.map((column) => {
@@ -209,10 +209,11 @@ const PostSingle = async ({
                             </TableRow>
                           );
                         })}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Paper>
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </Paper>
+              )}
             </article>
           </div>
         </div>

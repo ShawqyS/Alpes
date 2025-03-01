@@ -33,42 +33,34 @@ const Header = ({
   }, [pathname]);
 
   const toggleMenu = (index: string, parentIndex?: string) => {
-    if (parentIndex === "3") {
-      // Handle toggling for "Productos" children (e.g., Kote, Mallas)
-      setOpenMenus((prev) => {
-        const newOpenMenus = { ...prev };
-
-        // Close other siblings under "Productos"
-        Object.keys(newOpenMenus).forEach((key) => {
-          if (key.startsWith(parentIndex) && key !== index) {
+    setOpenMenus((prev) => {
+      const newOpenMenus: { [key: string]: boolean } = {};
+  
+      if (parentIndex) {
+        // If toggling a submenu, close all other submenus under the same parent
+        Object.keys(prev).forEach((key) => {
+          if (key.startsWith(parentIndex)) {
             newOpenMenus[key] = false;
           }
         });
-
-        // Toggle the clicked child menu, but ensure "Productos" stays open
-        return {
-          ...newOpenMenus,
-          [index]: !prev[index],
-          "3": true, // Ensure "Productos" remains open
-        };
-      });
-    } else {
-      // Toggle "Productos" or other main menu items
-      setOpenMenus((prev) => ({
-        ...prev,
-        [index]: !prev[index],
-      }));
-    }
+        // Ensure parent remains open and toggle the clicked submenu
+        newOpenMenus[parentIndex] = true;
+        newOpenMenus[index] = !prev[index];
+      } else {
+        // Close all other main menus when one is opened
+        newOpenMenus[index] = !prev[index];
+      }
+  
+      return newOpenMenus;
+    });
   };
+  
 
-  const renderMenuItems = (
-    items: INavigationLink[],
-    parentIndex?: string
-  ) => {
+  const renderMenuItems = (items: INavigationLink[], parentIndex?: string) => {
     return items.map((item, i) => {
       const currentIndex = parentIndex ? `${parentIndex}-${i}` : `${i}`;
       const isOpen = openMenus[currentIndex];
-
+  
       return (
         <React.Fragment key={`menu-item-${currentIndex}`}>
           {item.hasChildren ? (
@@ -105,6 +97,7 @@ const Header = ({
                   (pathname === `${item.url}/` || pathname === item.url) &&
                   "active"
                 }`}
+                onClick={() => setOpenMenus({})} // Close all menus on navigation
               >
                 {item.name}
               </Link>
@@ -114,6 +107,7 @@ const Header = ({
       );
     });
   };
+  
 
   return (
     <header

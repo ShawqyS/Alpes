@@ -1,7 +1,7 @@
 ---
 title: "Products"
 title1: "Diamond Pattern"
-title2: "Ripple Pattern"
+title2: "Woven Pattern"
 title3: "Spiral Pattern"
 title4: "Rib Pattern"
 title5: "Square Pattern"

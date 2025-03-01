@@ -5,9 +5,11 @@ description: "Here you can find more info about Alpes Casings"
 image: "/images/avatar.png"
 draft: false
 mission: "Our Mission"
+vision: "Our Vision"
 about: "About Us"
 missiontext: "We work in various industries including processed meats, fresh meats, and cheeses, ensuring that the final products exceed consumers expectations in terms of appearance, taste, and quality."
-abouttext: "With more than 25 years in the market, we are a leading company in sales of smoked nettings, spiced nettings, flavored nettings and elastic nettings for the production of sausages, hams and cheeses."
+abouttext: "With more than 30 years of experience in the market, we are a leading company in sales of smoked nettings, spiced nettings, flavored nettings and elastic nettings for the production of sausages, hams and cheeses."
+visiontext: "Increase our market leadership in the multinational market, being synonymous with quality, commitment, human quality, and the best for your sausages."
 
 ---
 

@@ -23,6 +23,8 @@ export type AboutPage = {
     mission: string;
     abouttext: string;
     missiontext: string;
+    vision: string;
+    visiontext: string;
   };
   content: string;
 };
