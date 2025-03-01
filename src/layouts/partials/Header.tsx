@@ -154,15 +154,6 @@ const Header = ({
           {renderMenuItems(main)}
         </ul>
         <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-          {settings.search && (
-            <button
-              className="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
-              aria-label="search"
-              data-search-trigger
-            >
-              <IoSearch />
-            </button>
-          )}
           <ThemeSwitcher className="mr-5" />
 
           {activeLanguages.length > 1 && (
